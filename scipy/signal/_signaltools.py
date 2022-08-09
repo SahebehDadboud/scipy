@@ -3180,7 +3180,7 @@ def resample(x, num, t=None, axis=0, window=None, domain='time'):
     if t is None:
         return y
     else:
-        new_t = np.arange(0, num) * (t[1] - t[0]) * Nx / float(num) + t[0]
+        new_t = np.arange(0, num) * (t[1] - t[0]) * (Nx / float(num)) + t[0]
         return y, new_t
 
 
